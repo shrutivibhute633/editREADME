@@ -5,24 +5,6 @@ Our goal is to develop an efficient C++ program capable of solving Sudoku puzzle
 
 
 
-Background and Research Review:
-Our study involves analyzing various methods for solving Sudoku puzzles, with a focus on efficiency and accuracy. The main findings from the literature review are as follows:
-Backtracking as a Foundation:
-The backtracking algorithm is a systematic method used in constraint satisfaction problems. It iteratively tries to assign a valid number to each cell and backtracks when a conflict arises.
-This method’s simplicity makes it highly applicable to Sudoku, though it can be computationally slow, particularly for puzzles with complex constraints.
-Enhancing Backtracking with Heuristics:
-Minimum Remaining Values (MRV): The MRV heuristic selects the next cell based on the fewest possible valid values, reducing dead-ends early in the process.
-Degree Heuristic: If multiple cells have an equal number of options, the Degree heuristic selects the cell impacting the most unfilled neighbors, maximizing constraint reduction.
-These heuristics guide the algorithm in making optimal choices, reducing unnecessary steps and enhancing speed.
-Advanced Data Structures for Optimization:
-By using data structures like sets and hash maps, possible values for each cell can be stored and quickly referenced, allowing the solver to eliminate invalid numbers early in the process.
-This approach reduces redundancy and saves computational time by avoiding repetitive calculations.
-Constraint Satisfaction Framework (CSP):
-Sudoku can be represented as a CSP, where each row, column, and subgrid must meet specific constraints. This CSP model is frequently used in AI for solving similar puzzles and helps to define the problem clearly.
-Algorithm Visualization for Clarity:
-Visualizing each step of the algorithm’s decision-making process enhances comprehension, particularly for users interested in understanding the algorithm’s behavior.
-
-
 
 
 Data Sources and Testing Framework:
